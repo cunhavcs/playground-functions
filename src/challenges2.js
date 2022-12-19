@@ -44,20 +44,20 @@ const generatePhoneNumber = (numbers) => {
 const triangleCheck = (lineA, lineB, lineC) => (lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB) && (lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineA - lineB));
 
 // Desafio 13
-function hydrate(drinks) {
+const hydrate = (drinks) => {
   let regex = /\d/g;
   let drinkNumberList = drinks.match(regex);
-  let sumOfDrinks = 0
+  let sumOfDrinks = 0;
 
   for (let index = 0; index < drinkNumberList.length; index += 1) {
-    drinkNumberList[index] = parseInt(drinkNumberList[index]);
+    drinkNumberList[index] = parseInt(drinkNumberList[index], 10);
     sumOfDrinks += drinkNumberList[index];
   }
   if (sumOfDrinks > 1) {
-    return sumOfDrinks + " copos de água";
+    return `${sumOfDrinks} copos de água`;
   }
-  return sumOfDrinks + " copo de água";
-}
+  return `${sumOfDrinks} copo de água`;
+};
 
 module.exports = {
   generatePhoneNumber,
