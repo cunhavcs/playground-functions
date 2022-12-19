@@ -42,21 +42,16 @@ const catAndMouse = (mouse, cat1, cat2) => {
 };
 
 // Desafio 8
-function fizzBuzz(numberList) {
+const fizzBuzz = (numberList) => {
   let fizzBuzzArray = [];
   for (let index = 0; index < numberList.length; index += 1) {
-    if (numberList[index] % 3 === 0 && numberList[index] % 5 === 0) {
-      fizzBuzzArray.push('fizzBuzz');
-    } else if (numberList[index] % 3 === 0) {
-      fizzBuzzArray.push('fizz');
-    } else if (numberList[index] % 5 === 0) {
-      fizzBuzzArray.push('buzz');
-    } else {
-      fizzBuzzArray.push('bug!');
-    }
+    if (numberList[index] % 3 === 0 && numberList[index] % 5 === 0) fizzBuzzArray.push('fizzBuzz');
+    else if (numberList[index] % 3 === 0) fizzBuzzArray.push('fizz');
+    else if (numberList[index] % 5 === 0) fizzBuzzArray.push('buzz');
+    else fizzBuzzArray.push('bug!');
   }
   return fizzBuzzArray;
-}
+};
 
 // Desafio 9
 function encode(string) {
