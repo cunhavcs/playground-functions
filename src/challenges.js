@@ -101,7 +101,7 @@ const decode = (string) => {
 };
 
 // Desafio 10
-function techList(technologies, name) {
+const techList = (technologies, name) => {
   let objectsList = [];
 
   if(technologies.length > 0){
@@ -131,7 +131,7 @@ function techList(technologies, name) {
     return objectsList;
   };
   return "Vazio!";
-}
+};
 
 module.exports = {
   calcArea,
