@@ -8,9 +8,7 @@ const calcArea = (base, height) => (base * height) / 2;
 const splitSentence = (string) => string.split(' ');
 
 // Desafio 4
-function concatName(nameList) {
-  return nameList[nameList.length - 1] + ', ' + nameList[0];
-}
+const concatName = (nameList) => `${nameList[nameList.length - 1]}, ${nameList[0]}`;
 
 // Desafio 5
 function footballPoints(wins, ties) {
