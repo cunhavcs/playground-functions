@@ -14,7 +14,7 @@ const concatName = (nameList) => `${nameList[nameList.length - 1]}, ${nameList[0
 const footballPoints = (wins, ties) => (wins * 3) + (ties * 1);
 
 // Desafio 6
-function highestCount(numberList) {
+const highestCount = (numberList) => {
   let higherNumber = numberList[0];
   let higherNumberCounter = 1;
   for (let index = 1; index < numberList.length; index += 1) {
@@ -26,7 +26,7 @@ function highestCount(numberList) {
     }
   }
   return higherNumberCounter;
-}
+};
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
