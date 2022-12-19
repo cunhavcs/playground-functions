@@ -5,9 +5,7 @@ const compareTrue = (valor1, valor2) => valor1 && valor2;
 const calcArea = (base, height) => (base * height) / 2;
 
 // Desafio 3
-function splitSentence(string) {
-  return string.split(' ');
-}
+const splitSentence = (string) => string.split(' ');
 
 // Desafio 4
 function concatName(nameList) {
