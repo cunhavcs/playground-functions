@@ -103,8 +103,7 @@ const decode = (string) => {
 // Desafio 10
 const techList = (technologies, name) => {
   let objectsList = [];
-
-  if(technologies.length > 0){
+  if (technologies.length > 0) {
     for (let index = 0; index < technologies.length; index += 1) {
       let object = {};
       object.name = name;
