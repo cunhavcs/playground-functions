@@ -11,9 +11,7 @@ const splitSentence = (string) => string.split(' ');
 const concatName = (nameList) => `${nameList[nameList.length - 1]}, ${nameList[0]}`;
 
 // Desafio 5
-function footballPoints(wins, ties) {
-  return (wins * 3) + (ties * 1);
-}
+const footballPoints = (wins, ties) => (wins * 3) + (ties * 1);
 
 // Desafio 6
 function highestCount(numberList) {
