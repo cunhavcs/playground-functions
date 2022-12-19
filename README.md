@@ -1,13 +1,25 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Playground Functions Project
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+Projeto desenvolvido com os conteúdos aprendidos na seção de `Introdução à JavaScript`:
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+- `Lógica de Programação` e `Algoritmos`;
+
+- Estruturas condicionais com `if`, `else` e `switch/case`;
+
+- Operadores lógicos `AND`, `OR` e `NOT` e `Precedência de Operadores`;
+
+- `Arrays` e seus métodos como `.push()`, `.unshift()`, `.pop()` e `shift()` (além do uso do `.length`);
+
+- Estruturas de repetição com `for` e `while`;
+
+- `Objetos` e formas de acesso às propriedades com `Notação de Ponto` e `Notação de Colchetes`;
+
+- `Funções`;
+
+- Conceitos sobre `escopo de blocos`, `hoisting` e utilização de `var`, `let` e `const`;
+
+- `Template Literals`;
+
+- `Arrow Functions`;
+
+- `Ternary Operator` (outra forma de criar condições).
