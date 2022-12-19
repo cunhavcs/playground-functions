@@ -1,15 +1,15 @@
 // Desafio 11
-function generatePhoneNumber(numbers) {
-  let phoneNumber = "";
+const generatePhoneNumber = (numbers) => {
+  let phoneNumber = '';
   let currentCount = 0;
 
-  if (numbers.length !== 11){
-    return "Array com tamanho incorreto.";
+  if (numbers.length !== 11) {
+    return 'Array com tamanho incorreto.';
   }
 
   for (let index = 0; index < numbers.length; index += 1) {
     if (numbers[index] < 0 || numbers[index] > 9) {
-      return "não é possível gerar um número de telefone com esses valores";
+      return 'não é possível gerar um número de telefone com esses valores';
     }
 
     for (let index2 = 0; index2 < numbers.length; index2 += 1) {
@@ -19,47 +19,45 @@ function generatePhoneNumber(numbers) {
     }
 
     if (currentCount >= 3) {
-      return "não é possível gerar um número de telefone com esses valores";
+      return 'não é possível gerar um número de telefone com esses valores';
     }
     currentCount = 0;  
   
     switch (index) {
       case 0:
-        phoneNumber += "(" + numbers[index];
+        phoneNumber += `(${numbers[index]}`;
         break;
       case 2:
-        phoneNumber += ") " + numbers[index];
+        phoneNumber += `) ${numbers[index]}`;
         break;
       case 7:
-        phoneNumber += "-" + numbers[index];
+        phoneNumber += `-${numbers[index]}`;
         break;
       default:
         phoneNumber += numbers[index];
     }
   }
   return phoneNumber;
-}
+};
 
 // Desafio 12
-function triangleCheck(lineA, lineB, lineC) {
-  return (lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB) && (lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineA - lineB));
-}
+const triangleCheck = (lineA, lineB, lineC) => (lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB) && (lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineA - lineB));
 
 // Desafio 13
-function hydrate(drinks) {
+const hydrate = (drinks) => {
   let regex = /\d/g;
   let drinkNumberList = drinks.match(regex);
-  let sumOfDrinks = 0
+  let sumOfDrinks = 0;
 
   for (let index = 0; index < drinkNumberList.length; index += 1) {
-    drinkNumberList[index] = parseInt(drinkNumberList[index]);
+    drinkNumberList[index] = parseInt(drinkNumberList[index], 10);
     sumOfDrinks += drinkNumberList[index];
   }
   if (sumOfDrinks > 1) {
-    return sumOfDrinks + " copos de água";
+    return `${sumOfDrinks} copos de água`;
   }
-  return sumOfDrinks + " copo de água";
-}
+  return `${sumOfDrinks} copo de água`;
+};
 
 module.exports = {
   generatePhoneNumber,

@@ -29,7 +29,7 @@ const highestCount = (numberList) => {
 };
 
 // Desafio 7
-function catAndMouse(mouse, cat1, cat2) {
+const catAndMouse = (mouse, cat1, cat2) => {
   let distanceMouseCat1 = Math.abs(mouse - cat1);
   let distanceMouseCat2 = Math.abs(mouse - cat2);
   if (distanceMouseCat1 < distanceMouseCat2) {
@@ -39,27 +39,22 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'cat2';
   }
   return 'os gatos trombam e o rato foge';
-}
+};
 
 // Desafio 8
-function fizzBuzz(numberList) {
+const fizzBuzz = (numberList) => {
   let fizzBuzzArray = [];
   for (let index = 0; index < numberList.length; index += 1) {
-    if (numberList[index] % 3 === 0 && numberList[index] % 5 === 0) {
-      fizzBuzzArray.push('fizzBuzz');
-    } else if (numberList[index] % 3 === 0) {
-      fizzBuzzArray.push('fizz');
-    } else if (numberList[index] % 5 === 0) {
-      fizzBuzzArray.push('buzz');
-    } else {
-      fizzBuzzArray.push('bug!');
-    }
+    if (numberList[index] % 3 === 0 && numberList[index] % 5 === 0) fizzBuzzArray.push('fizzBuzz');
+    else if (numberList[index] % 3 === 0) fizzBuzzArray.push('fizz');
+    else if (numberList[index] % 5 === 0) fizzBuzzArray.push('buzz');
+    else fizzBuzzArray.push('bug!');
   }
   return fizzBuzzArray;
-}
+};
 
 // Desafio 9
-function encode(string) {
+const encode = (string) => {
   for (let index = 0; index < string.length; index += 1) {
     switch (string[index]) {
       case 'a':
@@ -80,8 +75,9 @@ function encode(string) {
     }
   }
   return string;
-}
-function decode(string) {
+};
+
+const decode = (string) => {
   for (let index = 0; index < string.length; index += 1) {
     switch (string[index]) {
       case '1':
@@ -102,13 +98,12 @@ function decode(string) {
     }
   }
   return string;
-}
+};
 
 // Desafio 10
-function techList(technologies, name) {
+const techList = (technologies, name) => {
   let objectsList = [];
-
-  if(technologies.length > 0){
+  if (technologies.length > 0) {
     for (let index = 0; index < technologies.length; index += 1) {
       let object = {};
       object.name = name;
@@ -135,7 +130,7 @@ function techList(technologies, name) {
     return objectsList;
   };
   return "Vazio!";
-}
+};
 
 module.exports = {
   calcArea,
