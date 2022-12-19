@@ -54,7 +54,7 @@ const fizzBuzz = (numberList) => {
 };
 
 // Desafio 9
-function encode(string) {
+const encode = (string) => {
   for (let index = 0; index < string.length; index += 1) {
     switch (string[index]) {
       case 'a':
@@ -75,8 +75,9 @@ function encode(string) {
     }
   }
   return string;
-}
-function decode(string) {
+};
+
+const decode = (string) => {
   for (let index = 0; index < string.length; index += 1) {
     switch (string[index]) {
       case '1':
@@ -97,7 +98,7 @@ function decode(string) {
     }
   }
   return string;
-}
+};
 
 // Desafio 10
 function techList(technologies, name) {
