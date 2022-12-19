@@ -1,7 +1,5 @@
 // Desafio 1
-function compareTrue(valor1, valor2) {
-  return valor1 && valor2;
-}
+const compareTrue = (valor1, valor2) => valor1 && valor2;
 
 // Desafio 2
 function calcArea(base, height) {
