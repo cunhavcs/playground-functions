@@ -41,9 +41,7 @@ const generatePhoneNumber = (numbers) => {
 };
 
 // Desafio 12
-function triangleCheck(lineA, lineB, lineC) {
-  return (lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB) && (lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineA - lineB));
-}
+const triangleCheck = (lineA, lineB, lineC) => (lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB) && (lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineA - lineB));
 
 // Desafio 13
 function hydrate(drinks) {
